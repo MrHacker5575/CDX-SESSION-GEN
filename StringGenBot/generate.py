@@ -37,21 +37,21 @@ import config
 ask_ques = "**» ▷ 𝐂𝐡𝐨𝐨𝐬𝐞 𝐓𝐡𝐞 𝐒𝐭𝐫𝐢𝐧𝐠 𝐖𝐡𝐢𝐜𝐡 𝐘𝐨𝐮 𝐖𝐚𝐧𝐭 ✔️ : :**"
 buttons_ques = [
     [
-        InlineKeyboardButton("🎄𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌🎄", callback_data="pyrogram1"),
-        InlineKeyboardButton("🪴𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌 𝐕2🪴", callback_data="pyrogram"),
+        InlineKeyboardButton("🍻𝗣ʏʀᴏɢʀᴀᴍ ᴠ1🍻", callback_data="pyrogram1"),
+        InlineKeyboardButton("🦴𝗣ʏʀᴏɢʀᴀᴍ V2🦴", callback_data="pyrogram"),
     ],
     [
-        InlineKeyboardButton("🍷𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍🍷", callback_data="telethon"),
+        InlineKeyboardButton("🍷𝗧єʟєτнοиє🍷", callback_data="telethon"),
     ],
     [
-        InlineKeyboardButton("🍒𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌 𝐁𝐎𝐓🍒", callback_data="pyrogram_bot"),
-        InlineKeyboardButton("💞𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍 𝐁𝐎𝐓💞", callback_data="telethon_bot"),
+        InlineKeyboardButton("🍒𝗣ʏʀᴏɢʀᴀᴍ 𝗕០Ƭ🍒", callback_data="pyrogram_bot"),
+        InlineKeyboardButton("💞𝗧єʟєτнοиє 𝗕០Ƭ💞", callback_data="telethon_bot"),
     ],
 ]
 
 gen_button = [
     [
-        InlineKeyboardButton(text="🙄 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄 𝐒𝐓𝐑𝐈𝐍𝐆 🙄", callback_data="generate")
+        InlineKeyboardButton(text="💎𝗦τяιиց 𝗚єи💎", callback_data="generate")
     ]
 ]
 
@@ -65,16 +65,16 @@ async def main(_, msg):
 
 async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: bool = False, is_bot: bool = False):
     if telethon:
-        ty = "🍷𝐓𝐄𝐋𝐄𝐓𝐇𝐎𝐍🍷"
+        ty = "🍷𝗧єʟєτнοиє🍷"
     else:
-        ty = "🎄𝐏𝐘𝐑𝐎𝐆𝐑𝐀𝐌🎄"
+        ty = "🎄𝗧єʟєτнοиє🎄"
         if not old_pyro:
             ty += " 𝐕2"
     if is_bot:
         ty += " 𝐁𝐎𝐓"
     await msg.reply(f"» 𝐓𝐑𝐘𝐈𝐍𝐆 𝐓𝐎 𝐒𝐓𝐀𝐑𝐓 **{ty}** 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐎𝐑...")
     user_id = msg.chat.id
-    api_id_msg = await bot.ask(user_id, "𝐏𝐋𝐄𝐀𝐒𝐄 𝐒𝐄𝐍𝐃 𝐘𝐎𝐔 **𝐀𝐏𝐈_𝐈𝐃** 𝐓𝐎 𝐏𝐑𝐎𝐂𝐄𝐄𝐃.\n\n𝐂𝐋𝐈𝐂𝐊 𝐎𝐍 /skip 𝐅𝐎𝐑 𝐔𝐒𝐈𝐍𝐆 𝐁𝐎𝐓 𝐀𝐏𝐈.", filters=filters.text)
+    api_id_msg = await bot.ask(user_id, "ρℓєαѕє ѕєи∂ γου **𝐀𝐏𝐈_𝐈𝐃** το ρяοϲєѕѕ .\n\nClíck օղ /skip ƒοя υѕιиg ϐοτ 𝐀𝐏𝐈.", filters=filters.text)
     if await cancelled(api_id_msg):
         return
     if api_id_msg.text == "/skip":
@@ -84,14 +84,14 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         try:
             api_id = int(api_id_msg.text)
         except ValueError:
-            await api_id_msg.reply("**𝐀𝐏𝐈_𝐈𝐃** 𝐌𝐔𝐒𝐓 𝐁𝐄 𝐀𝐍 𝐈𝐍𝐓𝐄𝐆𝐄𝐑, 𝐒𝐓𝐀𝐑𝐓 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 𝐀𝐆𝐀𝐈𝐍.", quote=True, reply_markup=InlineKeyboardMarkup(gen_button))
+            await api_id_msg.reply("**𝐀𝐏𝐈_𝐈𝐃** мυѕτ ϐє , ѕταяτ gєи γου ѕєѕѕιοи αgαιи.", quote=True, reply_markup=InlineKeyboardMarkup(gen_button))
             return
-        api_hash_msg = await bot.ask(user_id, "» 𝐍𝐎𝐖 𝐏𝐋𝐄𝐀𝐒𝐄 𝐒𝐄𝐍𝐃 𝐘𝐎𝐔𝐑 **𝐀𝐏𝐈_𝐇𝐀𝐒𝐇** 𝐓𝐎 𝐂𝐎𝐍𝐓𝐈𝐍𝐔𝐄", filters=filters.text)
+        api_hash_msg = await bot.ask(user_id, "» иοω ρℓєαѕє ѕєи∂ γουя **𝐀𝐏𝐈_𝐇𝐀𝐒𝐇** το ϲοиτιиυє", filters=filters.text)
         if await cancelled(api_hash_msg):
             return
         api_hash = api_hash_msg.text
     if not is_bot:
-        t = "» 𝐏𝐋𝐄𝐀𝐒𝐄 𝐒𝐄𝐍𝐃 𝐘𝐎𝐔 **𝐏𝐇𝐎𝐍𝐄 𝐍𝐔𝐌𝐁𝐄𝐑** 𝐖𝐈𝐓𝐇 𝐂𝐎𝐔𝐍𝐓𝐑𝐘 𝐂𝐎𝐃𝐄𝐅𝐎𝐑 𝐖𝐇𝐈𝐂𝐇 𝐘𝐎𝐔 𝐖𝐀𝐍𝐓 𝐓𝐎 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐄 𝐒𝐄𝐒𝐒𝐈𝐎𝐍 \n𝐄𝐗𝐀𝐌𝐏𝐋𝐄 : `+910000000000`'"
+        t = "» ρℓєαѕє ѕєи∂ γουя **𝐏𝐇𝐎𝐍𝐄 𝐍𝐔𝐌𝐁𝐄𝐑** το ϲοиτιиυє \n𝐄𝐗𝐀𝐌𝐏𝐋𝐄 : `+910000000000`'"
     else:
         t = "ᴩʟᴇᴀsᴇ sᴇɴᴅ ʏᴏᴜʀ **ʙᴏᴛ_ᴛᴏᴋᴇɴ** ᴛᴏ ᴄᴏɴᴛɪɴᴜᴇ.\nᴇxᴀᴍᴩʟᴇ : `5432198765:abcdanonymousterabaaplol`'"
     phone_number_msg = await bot.ask(user_id, t, filters=filters.text)
@@ -174,7 +174,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = f"**𝐓𝐡𝐢𝐬 𝐈𝐬 𝐘𝐨𝐮𝐫 {ty} 𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧** \n\n`{string_session}` \n\n**𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐁𝐲 :** @SESSION_GEN_ROBOT\n🍒 **𝐍𝐎𝐓𝐄 :** 𝐃𝐨𝐧𝐭 𝐒𝐡𝐚𝐫𝐞 𝐖𝐢𝐭𝐡 𝐀𝐧𝐲𝐨𝐧𝐞 𝐁𝐞𝐜𝐚𝐮𝐬𝐞 𝐇𝐞 𝐂𝐚𝐧 𝐇𝐚𝐜𝐤 𝐘𝐨𝐮𝐫 𝐀𝐥𝐥 𝐃𝐚𝐭𝐚. 🍑 𝐀𝐧𝐝 𝐃𝐨𝐧𝐭 𝐅𝐨𝐫𝐠𝐞𝐭 𝐓𝐨 𝐉𝐨𝐢𝐧 @TEAM_CDX & @OP_CODEX 🥺"
+    text = f"**𝐓𝐡𝐢𝐬 𝐈𝐬 𝐘𝐨𝐮𝐫 {ty} 𝐒𝐭𝐫𝐢𝐧𝐠 𝐒𝐞𝐬𝐬𝐢𝐨𝐧** \n\n`{string_session}` \n\n**𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐞𝐝 𝐁𝐲 :** @SESSION_GEN_ROBOT\n🍒 **𝐍𝐎𝐓𝐄 :** 𝐃𝐨𝐧𝐭 𝐒𝐡𝐚𝐫𝐞 𝐖𝐢𝐭𝐡 𝐀𝐧𝐲𝐨𝐧𝐞 𝐁𝐞𝐜𝐚𝐮𝐬𝐞 𝐇𝐞 𝐂𝐚𝐧 𝐇𝐚𝐜𝐤 𝐘𝐨𝐮𝐫 𝐀𝐥𝐥 𝐃𝐚𝐭𝐚. 🍑 𝐀𝐧𝐝 𝐃𝐨𝐧𝐭 𝐅𝐨𝐫𝐠𝐞𝐭 𝐓𝐨 𝐉𝐨𝐢𝐧 @TEAM_CDX"
     try:
         if not is_bot:
             await client.send_message("me", text)
