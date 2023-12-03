@@ -21,19 +21,22 @@
         }, 
         "MONGO_URL": {
             "description": "",
-            "value": "",
+            "value": "mongodb+srv://Krishna:pss968048@cluster0.4rfuzro.mongodb.net/?retryWrites=true&w=majority",
             "required": true
         },
         "API_ID": {
             "description": "",
+            "value": "20310034",
             "required": true
         },
         "OWNER_ID": {
             "description": "",
+            "value": "6321280493",
             "required": true
         }, 
         "API_HASH": {
             "description": "",
+            "value": "e0d2c11f4ba291ce596868e73df87519",
             "required": true
         }
     },
