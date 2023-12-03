@@ -11,14 +11,16 @@
     "env": {
         "BOT_TOKEN": {
             "description": "",
+            "value": ""
             "required": true
         },  
         "MUST_JOIN": {
-            "description": "",
+            "description": "", 
+            "value": ""
             "required": true      
         }, 
         "MONGO_URL": {
-            "description": "mongo db url here",
+            "description": "",
             "required": true
         },
         "API_ID": {
