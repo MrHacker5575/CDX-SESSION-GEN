@@ -9,7 +9,7 @@
    > ⭐️ Thanks to everyone for using this STRING GENERATOR BOTS   
     ❤️MASTER CODEX!   
 
-             ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─   
+               ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─   
 
    </h3>   
 
