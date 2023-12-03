@@ -1,7 +1,7 @@
 {
-  "name": "🧿𝐒𝐓𝐑𝐀𝐍𝐆𝐄𝐑 𝐒𝐓𝐑𝐈𝐍𝐆 𝐁𝐎𝐓🧿",
-  "description": "A Telegram Bot to generate Telethon and Pyrogram String Sessions.",
-  "logo": "https://te.legra.ph/file/8e779ca298fb47f368f2b.jpg",
+  "name": "🕸️ 🇨Ⓞ𝗗𝜩🇽 💨",
+  "description": "",
+  "logo": "https://te.legra.ph/file/63531adaa61fd0c91a556.jpg",
   "keywords": [
     "telegram",
     "bot",
@@ -10,11 +10,11 @@
   ],
     "env": {
         "BOT_TOKEN": {
-            "description": "Get this value from @BotFather",
+            "description": "",
             "required": true
         },  
         "MUST_JOIN": {
-            "description": "Username of a group or channel for which you want to set force sub.(without @)",
+            "description": "",
             "required": true      
         }, 
         "MONGO_URL": {
