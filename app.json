@@ -21,18 +21,19 @@
         }, 
         "MONGO_URL": {
             "description": "",
+            "value": ""
             "required": true
         },
         "API_ID": {
-            "description": "telegram api id here",
+            "description": "",
             "required": true
         },
         "OWNER_ID": {
-            "description": "Telegram id of the person who will known as owner of the bot.",
+            "description": "",
             "required": true
         }, 
         "API_HASH": {
-            "description": "telegram api hash here",
+            "description": "",
             "required": true
         }
     },
