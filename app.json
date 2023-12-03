@@ -11,17 +11,17 @@
     "env": {
         "BOT_TOKEN": {
             "description": "",
-            "value": ""
+            "value": "",
             "required": true
         },  
         "MUST_JOIN": {
             "description": "", 
-            "value": "TEAM_CDX"
+            "value": "TEAM_CDX",
             "required": true      
         }, 
         "MONGO_URL": {
             "description": "",
-            "value": ""
+            "value": "",
             "required": true
         },
         "API_ID": {
