@@ -16,7 +16,7 @@
         },  
         "MUST_JOIN": {
             "description": "", 
-            "value": ""
+            "value": "TEAM_CDX"
             "required": true      
         }, 
         "MONGO_URL": {
