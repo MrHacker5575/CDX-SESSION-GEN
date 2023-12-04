@@ -67,7 +67,7 @@ async def generate_session(bot: Client, msg: Message, telethon=False, old_pyro: 
     if telethon:
         ty = "🍷𝗧єʟєτнοиє🍷"
     else:
-        ty = "🎄𝗧єʟєτнοиє🎄"
+        ty = "🕸️𝗣ʏʀᴏɢʀᴀᴍ🕸️"
         if not old_pyro:
             ty += " 𝐕2"
     if is_bot:
