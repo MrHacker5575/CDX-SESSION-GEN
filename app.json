@@ -11,7 +11,7 @@
     "env": {
         "BOT_TOKEN": {
             "description": "",
-            "value": "",
+            "value": "6746026910:AAFozdpUptbaDbA3FUt1I5HEO5IF6imTJqo",
             "required": true
         },  
         "MUST_JOIN": {
